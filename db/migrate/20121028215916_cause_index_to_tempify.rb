@@ -4,5 +4,6 @@ class CauseIndexToTempify < ActiveRecord::Migration
   end
 
   def down
+    rename_column :some_table, :column2, :column1
   end
 end
